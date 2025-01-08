@@ -1,4 +1,5 @@
 import JWTKit
+#if canImport(Testing)
 import Testing
 import X509
 
@@ -927,3 +928,4 @@ let firebaseCert = """
     sb7NLsl7DkvjjxTz7I98xaGbfhofgYympeKT6UO+tmc=
     -----END CERTIFICATE-----
     """
+#endif

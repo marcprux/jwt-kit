@@ -1,5 +1,6 @@
 import Crypto
 import JWTKit
+#if canImport(Testing)
 import Testing
 
 #if !canImport(Darwin)
@@ -343,3 +344,4 @@ let ecdsaPublicKey = """
     C18ScRb4Z6poMBgJtYlVtd9ly63URv57ZW0Ncs1LiZB7WATb3svu+1c7HQ==
     -----END PUBLIC KEY-----
     """
+#endif

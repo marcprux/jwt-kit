@@ -1,4 +1,5 @@
 import JWTKit
+#if canImport(Testing)
 import Testing
 
 #if !canImport(Darwin)
@@ -114,3 +115,4 @@ struct ClaimTests {
         _ = try await keyCollection.verify(jwt, as: ExpirationPayload.self)
     }
 }
+#endif

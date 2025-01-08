@@ -27,12 +27,14 @@ jobs:
         run: swift test --package-path jwt --sanitize=thread
 
   unit-tests:
-    uses: vapor/ci/.github/workflows/run-unit-tests.yml@main
+    #uses: vapor/ci/.github/workflows/run-unit-tests.yml@main
+    uses: marcprux/ci/.github/workflows/run-unit-tests.yml@main
     with:
       with_api_check: ${{ github.event_name == 'pull_request' }}
       warnings_as_errors: true
       with_linting: true
       with_windows: true
       with_musl: true
+      with_android: true
       ios_scheme_name: jwt-kit
     secrets: inherit

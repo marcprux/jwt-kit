@@ -1,4 +1,5 @@
 import JWTKit
+#if canImport(Testing)
 import Testing
 import X509
 
@@ -461,3 +462,4 @@ private struct TokenPayload: JWTPayload {
         }
     }
 }
+#endif

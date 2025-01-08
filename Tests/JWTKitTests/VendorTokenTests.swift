@@ -1,4 +1,5 @@
 import JWTKit
+#if canImport(Testing)
 import Testing
 
 #if !canImport(Darwin)
@@ -344,3 +345,4 @@ struct VendorTokenTests {
         }
     }
 }
+#endif

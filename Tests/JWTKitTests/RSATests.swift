@@ -1,4 +1,5 @@
 import JWTKit
+#if canImport(Testing)
 import Testing
 import _CryptoExtras
 
@@ -377,3 +378,4 @@ let publicKey2 = """
     mwIDAQAB
     -----END PUBLIC KEY-----
     """
+#endif
