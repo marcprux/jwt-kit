@@ -36,6 +36,6 @@ jobs:
       with_windows: true
       with_musl: true
       # needs: https://github.com/vapor/ci/pull/44
-      with_android: true
+      #with_android: true
       ios_scheme_name: jwt-kit
     secrets: inherit
